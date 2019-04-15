@@ -1,0 +1,99 @@
+.header {
+  .header__top-bar {
+    padding: 1.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .container();
+  }
+
+  .header__top-bar__logo {
+    height: 36px;
+    // font-size: 2.8rem;
+    // @media @mobile {font-size: 2rem;}
+  }
+
+  .header__top-bar__nav {
+    a {
+      font-size: 1.4rem;
+      text-decoration: none;
+      font-weight: 500;
+      line-height: 19px;
+      padding: 7px 16px 9px;
+      color: @black;
+      border-radius: 3px;
+    }
+
+    // a.header__top-bar__nav__link {
+    // }
+
+    a.header__top-bar__nav__btn {
+      background: @primary-color;
+      color: #ffffff;
+      font-family: 'Open Sans';
+      font-size: 14px;
+      font-weight: bold;
+
+      &:hover {
+        background: @primary-hover;
+      }
+    }
+  }
+
+  .header__cta {
+    // background-image: url(../img/tool-spread2.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(../img/tool-spread.jpg);
+    // url(../img/man-sawing.jpg);
+    // opacity: 0.65;
+    // background-position: 25% 75%;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media @mobile {
+      height: 340px;
+    }
+
+    .header__cta__text-content {
+      color: white;
+      padding: 0 5rem;
+      font-size: 3.8rem;
+      line-height: 4.2rem;
+      font-weight: 300;
+      letter-spacing: 1px;
+      text-align: center;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+
+      @media @mobile {
+        font-weight: 300;
+        padding: 0 3rem;
+        font-size: 2.5rem;
+        line-height: 3rem;
+        letter-spacing: 0.5px;
+      }
+    }
+
+    .header__cta__button {
+      font-size: 2rem;
+      background: white;
+      color: @black;
+      text-decoration: none;
+      margin-top: 8rem;
+      border: 2px solid white;
+      padding: 1.5rem 2rem;
+      border-radius: 15px;
+
+      @media @mobile {
+        font-size: 1.5rem;
+        padding: 1rem;
+        border-radius: 8px;
+        margin-top: 4rem;
+      }
+    }
+  }
+}
