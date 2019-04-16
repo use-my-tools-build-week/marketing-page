@@ -2,7 +2,8 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin: 5rem 0;
+  margin: 6rem 0;
+  align-items: flex-start;
 
   @media @mobile {
     margin: 3rem 0;
@@ -40,10 +41,11 @@
   }
 }
 
-// .learn-more__tex-content {
-//   max-width: 400px;
-
-//   h2 {
-//     font-size: 1.8rem;
-//   }
-// }
+.learn-more.bottom-content {
+  margin-top: 6rem;
+}
+.learn-more.bottom-content .learn-more__text-content {
+  @media @mobile {
+    order: -1;
+  }
+}

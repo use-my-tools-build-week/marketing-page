@@ -227,15 +227,24 @@ body {
     margin-top: 4rem;
   }
 }
+footer p {
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 3rem 0;
+}
+footer a {
+  color: #c4a852;
+}
 .learn-more {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin-top: 5rem;
+  margin: 6rem 0;
+  align-items: flex-start;
 }
 @media (max-width: 500px) {
   .learn-more {
-    margin-top: 2rem;
+    margin: 3rem 0;
   }
 }
 .learn-more__text-content {
@@ -267,6 +276,14 @@ body {
 @media (max-width: 500px) {
   .learn-more img {
     margin-top: 2rem;
+  }
+}
+.learn-more.bottom-content {
+  margin-top: 6rem;
+}
+@media (max-width: 500px) {
+  .learn-more.bottom-content .learn-more__text-content {
+    order: -1;
   }
 }
 .about-us__lead-text {
