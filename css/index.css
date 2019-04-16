@@ -178,10 +178,10 @@ body {
   background: #afbde4;
 }
 .header .header__cta {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/tool-spread.jpg);
+  background-image: linear-gradient(rgba(97, 123, 201, 0.6), rgba(97, 123, 201, 0.6)), url(../img/tool-spread.jpg);
   background-position: center;
   background-size: cover;
-  height: 500px;
+  height: 530px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -195,16 +195,16 @@ body {
 .header .header__cta .header__cta__text-content {
   color: white;
   padding: 0 5rem;
-  font-size: 3.8rem;
+  font-size: 3.4rem;
   line-height: 4.2rem;
-  font-weight: 300;
   letter-spacing: 1px;
   text-align: center;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  font-weight: 700;
 }
 @media (max-width: 500px) {
   .header .header__cta .header__cta__text-content {
-    font-weight: 300;
+    font-weight: 600;
     padding: 0 3rem;
     font-size: 2.5rem;
     line-height: 3rem;
@@ -213,21 +213,29 @@ body {
 }
 .header .header__cta .header__cta__button {
   font-size: 2rem;
-  background: white;
-  color: #000000;
+  color: white;
   text-decoration: none;
-  margin-top: 8rem;
-  border: 2px solid white;
-  padding: 1.5rem 2rem;
-  border-radius: 15px;
+  margin-top: 5rem;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  background: #c4a852;
+  padding: 1rem 4rem;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: all 0.2s ease;
 }
 @media (max-width: 500px) {
   .header .header__cta .header__cta__button {
-    font-size: 1.5rem;
-    padding: 1rem;
+    font-size: 1.6rem;
+    padding: 1rem 6rem;
     border-radius: 8px;
     margin-top: 4rem;
   }
+}
+.header .header__cta .header__cta__button:hover {
+  background: #afbde4;
+  background: white;
+  color: black;
+  text-shadow: none;
 }
 footer {
   background: #f2f2f2;
@@ -236,10 +244,17 @@ footer {
 footer p {
   font-size: 1.6rem;
   text-align: center;
-  padding: 3rem 0;
+}
+@media (max-width: 500px) {
+  footer p {
+    font-size: 1.5rem;
+  }
 }
 footer a {
   color: #c4a852;
+}
+.utf-heart {
+  color: #617bc9;
 }
 .learn-more {
   display: flex;
@@ -314,10 +329,11 @@ footer a {
   }
 }
 .about-us__lead-text {
-  margin-top: 3rem;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
   font-size: 3.2rem;
   text-align: center;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.3;
 }
 @media (max-width: 500px) {
@@ -349,6 +365,8 @@ footer a {
   font-size: 2.6rem;
   margin-top: 2rem;
   flex-wrap: wrap;
+  font-weight: 300;
+  letter-spacing: 1.4px;
 }
 @media (max-width: 800px) {
   .profile__name {

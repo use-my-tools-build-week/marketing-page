@@ -5,10 +5,18 @@ footer {
   p {
     font-size: 1.6rem;
     text-align: center;
-    padding: 3rem 0;
+    // padding: 3rem 0;
+
+    @media @mobile {
+      font-size: 1.5rem;
+    }
   }
 
   a {
     color: @secondary-color;
   }
+}
+
+.utf-heart {
+  color: @primary-color;
 }
