@@ -10,7 +10,11 @@
   }
 
   &__text-content {
-    max-width: 400px;
+    max-width: 375px;
+
+    @media @tablet {
+      max-width: 600px;
+    }
 
     h2 {
       font-size: 2.4rem;
@@ -35,17 +39,20 @@
   }
 
   img {
-    @media @mobile {
-      margin-top: 2rem;
+    @media @tablet {
+      margin-top: 4rem;
     }
   }
 }
 
 .learn-more.bottom-content {
   margin-top: 6rem;
+  @media @mobile {
+    margin-top: 3rem;
+  }
 }
 .learn-more.bottom-content .learn-more__text-content {
-  @media @mobile {
+  @media @tablet {
     order: -1;
   }
 }

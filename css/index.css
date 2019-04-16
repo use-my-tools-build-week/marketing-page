@@ -248,7 +248,12 @@ footer a {
   }
 }
 .learn-more__text-content {
-  max-width: 400px;
+  max-width: 375px;
+}
+@media (max-width: 800px) {
+  .learn-more__text-content {
+    max-width: 600px;
+  }
 }
 .learn-more__text-content h2 {
   font-size: 2.4rem;
@@ -273,15 +278,20 @@ footer a {
     font-weight: 400;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .learn-more img {
-    margin-top: 2rem;
+    margin-top: 4rem;
   }
 }
 .learn-more.bottom-content {
   margin-top: 6rem;
 }
 @media (max-width: 500px) {
+  .learn-more.bottom-content {
+    margin-top: 3rem;
+  }
+}
+@media (max-width: 800px) {
   .learn-more.bottom-content .learn-more__text-content {
     order: -1;
   }
