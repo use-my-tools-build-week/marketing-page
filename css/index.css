@@ -300,6 +300,7 @@ footer a {
   margin-top: 3rem;
   font-size: 3.2rem;
   text-align: center;
+  font-weight: 300;
 }
 @media (max-width: 500px) {
   .about-us__lead-text {
@@ -337,4 +338,5 @@ footer a {
   font-size: 2rem;
   color: #c4a852;
   margin-top: 1.5rem;
+  font-weight: 600;
 }
