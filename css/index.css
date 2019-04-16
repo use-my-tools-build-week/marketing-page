@@ -162,7 +162,7 @@ body {
   font-weight: 500;
   line-height: 19px;
   padding: 7px 16px 9px;
-  color: black;
+  color: #000000;
   border-radius: 3px;
 }
 .header .header__top-bar__nav a.header__top-bar__nav__btn {
@@ -212,7 +212,7 @@ body {
 .header .header__cta .header__cta__button {
   font-size: 2rem;
   background: white;
-  color: black;
+  color: #000000;
   text-decoration: none;
   margin-top: 8rem;
   border: 2px solid white;
@@ -245,6 +245,8 @@ body {
   font-size: 2.4rem;
   line-height: 1.25;
   margin-bottom: 1.6rem;
+  color: #7f7f7f;
+  font-weight: 600;
 }
 @media (max-width: 500px) {
   .learn-more__text-content h2 {
@@ -252,12 +254,14 @@ body {
   }
 }
 .learn-more__text-content p {
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   line-height: 1.5;
+  font-weight: 300;
 }
 @media (max-width: 500px) {
   .learn-more__text-content p {
     font-size: 1.5rem;
+    font-weight: 400;
   }
 }
 @media (max-width: 500px) {
