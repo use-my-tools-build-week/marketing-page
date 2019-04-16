@@ -131,9 +131,11 @@ table {
 }
 html {
   font-size: 62.5%;
+  height: 100%;
 }
 body {
   font-family: 'Open Sans', sans-serif;
+  height: 100%;
 }
 .container {
   max-width: 1000px;
@@ -227,6 +229,10 @@ body {
     margin-top: 4rem;
   }
 }
+footer {
+  background: #f2f2f2;
+  padding: 2rem;
+}
 footer p {
   font-size: 1.6rem;
   text-align: center;
@@ -296,21 +302,34 @@ footer a {
     order: -1;
   }
 }
+.about-us {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (max-width: 800px) {
+  .about-us header {
+    margin-bottom: 3rem;
+  }
+}
 .about-us__lead-text {
-  margin-top: 3rem;
   font-size: 3.2rem;
   text-align: center;
   font-weight: 300;
+  margin-bottom: 7rem;
 }
 @media (max-width: 500px) {
   .about-us__lead-text {
     font-size: 2.2rem;
     line-height: 1.3;
+    margin-bottom: 0;
   }
 }
 .team-profiles {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 6rem;
 }
 .profile {
   display: flex;
