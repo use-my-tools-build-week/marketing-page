@@ -10,10 +10,15 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-// .container {
-//   max-width: 1000px;
-//   width: 100%;
-//   margin: 0 auto;
-//   padding-left: 15px;
-//   padding-right: 15px;
-// }
+.container() {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media @mobile {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
