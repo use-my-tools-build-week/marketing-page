@@ -184,7 +184,7 @@ body {
 }
 @media (max-width: 500px) {
   .header .header__cta {
-    height: 340px;
+    height: 400px;
   }
 }
 .header .header__cta .header__cta__text-content {
@@ -210,7 +210,7 @@ body {
   font-size: 2rem;
   color: white;
   text-decoration: none;
-  margin-top: 5rem;
+  margin-top: 4rem;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
   background: #c4a852;
   padding: 1rem 4rem;
@@ -231,6 +231,9 @@ body {
   background: white;
   color: black;
   text-shadow: none;
+}
+.header .header__cta .header__cta__button.learn-more-btn {
+  margin-top: 2.5rem;
 }
 .header__top-bar.dark {
   background: #617bc9;
@@ -265,12 +268,12 @@ footer a {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin: 6rem 0;
+  padding: 6rem 0;
   align-items: flex-start;
 }
 @media (max-width: 500px) {
   .learn-more {
-    margin: 3rem 0;
+    padding: 3rem 0;
   }
 }
 .learn-more__text-content {
@@ -309,13 +312,7 @@ footer a {
     margin-top: 4rem;
   }
 }
-.learn-more.bottom-content {
-  margin-top: 6rem;
-}
 @media (max-width: 500px) {
-  .learn-more.bottom-content {
-    margin-top: 3rem;
-  }
 }
 @media (max-width: 800px) {
   .learn-more.bottom-content .learn-more__text-content {

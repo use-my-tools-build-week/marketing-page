@@ -50,7 +50,7 @@
     align-items: center;
 
     @media @mobile {
-      height: 340px;
+      height: 400px;
     }
 
     .header__cta__text-content {
@@ -71,16 +71,18 @@
         letter-spacing: 0.5px;
       }
     }
+
     .header__cta__button {
       font-size: 2rem;
       color: white;
       text-decoration: none;
-      margin-top: 5rem;
+      margin-top: 4rem;
       text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
       background: @secondary-color;
       padding: 1rem 4rem;
       border-radius: 8px;
       font-weight: bold;
+
       transition: all 0.2s ease;
 
       @media @mobile {
@@ -95,6 +97,10 @@
         background: white;
         color: black;
         text-shadow: none;
+      }
+
+      &.learn-more-btn {
+        margin-top: 2.5rem;
       }
     }
   }
