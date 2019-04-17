@@ -1,10 +1,10 @@
 .header {
-  .header__top-bar {
+  .header__top-bar__inner {
     padding: 1.5rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .container();
+    // .container();
   }
 
   .header__top-bar__logo {
@@ -97,5 +97,18 @@
         text-shadow: none;
       }
     }
+  }
+}
+
+.header__top-bar.dark {
+  background: @primary-color;
+
+  a {
+    color: white;
+  }
+
+  a.header__top-bar__nav__btn {
+    color: @primary-color;
+    background: white;
   }
 }
