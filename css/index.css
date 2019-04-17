@@ -176,7 +176,7 @@ body {
   background-image: linear-gradient(rgba(97, 123, 201, 0.6), rgba(97, 123, 201, 0.6)), url(../img/tool-spread.jpg);
   background-position: center;
   background-size: cover;
-  height: 530px;
+  height: 560px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -185,6 +185,11 @@ body {
 @media (max-width: 500px) {
   .header .header__cta {
     height: 400px;
+  }
+}
+@media (max-width: 800px) {
+  .header .header__cta {
+    height: 480px;
   }
 }
 .header .header__cta .header__cta__text-content {
@@ -208,33 +213,48 @@ body {
 }
 .header .header__cta .header__cta__button {
   font-size: 2rem;
-  color: white;
   text-decoration: none;
-  margin-top: 4rem;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-  background: #c4a852;
+  margin-top: 7rem;
+  background: #617bc9;
   padding: 1rem 4rem;
   border-radius: 8px;
   font-weight: bold;
+  color: white;
+  border: 2px solid white;
   transition: all 0.2s ease;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+.header .header__cta .header__cta__button:hover {
+  background: white;
+  border: 2px solid #617bc9;
+  color: black;
+  text-shadow: none;
 }
 @media (max-width: 500px) {
   .header .header__cta .header__cta__button {
     font-size: 1.6rem;
     padding: 1rem 6rem;
     border-radius: 8px;
-    margin-top: 4rem;
+    margin-top: 5rem;
   }
 }
-.header .header__cta .header__cta__button:hover {
-  background: #afbde4;
+.header .header__cta .header__cta__button.scroll-btn {
+  margin-top: 4rem;
+  cursor: pointer;
+  background: #c4a852;
+  color: white;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+.header .header__cta .header__cta__button.scroll-btn:hover {
   background: white;
+  border: 2px solid #617bc9;
   color: black;
   text-shadow: none;
 }
-.header .header__cta .header__cta__button.scroll-btn {
-  margin-top: 2.5rem;
-  cursor: pointer;
+@media (max-width: 500px) {
+  .header .header__cta .header__cta__button.scroll-btn {
+    margin-top: 3rem;
+  }
 }
 .header__top-bar.dark {
   background: #617bc9;
