@@ -42,7 +42,7 @@
       url(../img/tool-spread.jpg);
     background-position: center;
     background-size: cover;
-    height: 530px;
+    height: 560px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,6 +50,10 @@
 
     @media @mobile {
       height: 400px;
+    }
+
+    @media @tablet {
+      height: 480px;
     }
 
     .header__cta__text-content {
@@ -73,34 +77,48 @@
 
     .header__cta__button {
       font-size: 2rem;
-      color: white;
       text-decoration: none;
-      margin-top: 4rem;
-      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-      background: @secondary-color;
+      margin-top: 7rem;
+      background: @primary-color;
       padding: 1rem 4rem;
       border-radius: 8px;
       font-weight: bold;
-
+      color: white;
+      border: 2px solid white;
       transition: all 0.2s ease;
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+
+      &:hover {
+        background: white;
+        border: 2px solid @primary-color;
+        color: black;
+        text-shadow: none;
+      }
 
       @media @mobile {
         font-size: 1.6rem;
         padding: 1rem 6rem;
         border-radius: 8px;
-        margin-top: 4rem;
-      }
-
-      &:hover {
-        background: @primary-hover;
-        background: white;
-        color: black;
-        text-shadow: none;
+        margin-top: 5rem;
       }
 
       &.scroll-btn {
-        margin-top: 2.5rem;
+        margin-top: 4rem;
         cursor: pointer;
+        background: @secondary-color;
+        color: white;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+
+        &:hover {
+          background: white;
+          border: 2px solid @primary-color;
+          color: black;
+          text-shadow: none;
+        }
+
+        @media @mobile {
+          margin-top: 3rem;
+        }
       }
     }
   }
