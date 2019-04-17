@@ -1,9 +1,9 @@
-const button = document.querySelector('.learn-more-btn');
-const scrollTo = document.querySelector('.learn-more');
+const button = document.querySelector('.scroll-btn');
+const newPosition = document.querySelector('.learn-more');
 
 button.addEventListener('click', e => {
   e.preventDefault();
-  scrollIt(scrollTo, 400, 'easeOutQuad');
+  scrollIt(newPosition, 400, 'easeOutQuad');
 });
 
 function scrollIt(destination, duration = 200, easing = 'linear', callback) {

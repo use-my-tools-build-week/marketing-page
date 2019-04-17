@@ -232,8 +232,9 @@ body {
   color: black;
   text-shadow: none;
 }
-.header .header__cta .header__cta__button.learn-more-btn {
+.header .header__cta .header__cta__button.scroll-btn {
   margin-top: 2.5rem;
+  cursor: pointer;
 }
 .header__top-bar.dark {
   background: #617bc9;
