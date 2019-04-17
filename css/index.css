@@ -232,8 +232,9 @@ body {
   color: black;
   text-shadow: none;
 }
-.header .header__cta .header__cta__button.learn-more-btn {
+.header .header__cta .header__cta__button.scroll-btn {
   margin-top: 2.5rem;
+  cursor: pointer;
 }
 .header__top-bar.dark {
   background: #617bc9;
@@ -277,7 +278,7 @@ footer a {
   }
 }
 .learn-more__text-content {
-  max-width: 375px;
+  max-width: 425px;
 }
 @media (max-width: 800px) {
   .learn-more__text-content {
@@ -312,11 +313,19 @@ footer a {
     margin-top: 4rem;
   }
 }
-@media (max-width: 500px) {
-}
 @media (max-width: 800px) {
   .learn-more.bottom-content .learn-more__text-content {
     order: -1;
+  }
+}
+.tool-img {
+  width: 300px;
+  height: auto;
+}
+@media (max-width: 500px) {
+  .tool-img {
+    width: 200px;
+    height: auto;
   }
 }
 .about-us {
