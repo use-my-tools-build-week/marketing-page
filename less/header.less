@@ -35,10 +35,7 @@
   }
 
   .header__cta {
-    background-image: linear-gradient(
-        rgba(97, 123, 201, 0.6),
-        rgba(97, 123, 201, 0.6)
-      ),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
       url(../img/tool-spread.jpg);
     background-position: center;
     background-size: cover;
@@ -58,19 +55,20 @@
 
     .header__cta__text-content {
       color: white;
-      padding: 0 5rem;
-      font-size: 3.4rem;
-      line-height: 4.2rem;
+      padding: 0 3rem;
+      font-size: 4.4rem;
+      line-height: 5rem;
       letter-spacing: 1px;
       text-align: center;
-      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-      font-weight: 700;
-
+      font-weight: 600;
+      @media @tablet {
+        font-size: 3.7rem;
+      }
       @media @mobile {
         font-weight: 600;
-        padding: 0 3rem;
-        font-size: 2.5rem;
-        line-height: 3rem;
+        padding: 0 2rem;
+        font-size: 3rem;
+        line-height: 3.6rem;
         letter-spacing: 0.5px;
       }
     }
@@ -79,20 +77,19 @@
       font-size: 2rem;
       text-decoration: none;
       margin-top: 7rem;
-      background: @primary-color;
+      background: @primary-alt;
       padding: 1rem 4rem;
       border-radius: 8px;
       font-weight: bold;
       color: white;
-      border: 2px solid white;
+      border: 2px solid @primary-alt;
       transition: all 0.2s ease;
-      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 
       &:hover {
         background: white;
-        border: 2px solid @primary-color;
-        color: black;
-        text-shadow: none;
+        border: 2px solid white;
+        color: @primary-alt;
+        border: 2px solid @primary-alt;
       }
 
       @media @mobile {
@@ -103,21 +100,20 @@
       }
 
       &.scroll-btn {
-        margin-top: 4rem;
+        margin-top: 3rem;
         cursor: pointer;
-        background: @secondary-color;
-        color: white;
-        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+        background: white;
+        color: @primary-alt;
+        text-shadow: none;
 
         &:hover {
-          background: white;
-          border: 2px solid @primary-color;
-          color: black;
-          text-shadow: none;
+          background: @primary-alt;
+          color: white;
+          border: 2px solid @primary-alt;
         }
 
         @media @mobile {
-          margin-top: 3rem;
+          margin-top: 2rem;
         }
       }
     }
@@ -132,7 +128,8 @@
   }
 
   a.header__top-bar__nav__btn {
-    color: @primary-color;
+    color: @primary-alt;
+    border: 2px solid @primary-alt;
     background: white;
   }
 }
