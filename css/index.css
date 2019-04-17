@@ -173,7 +173,7 @@ body {
   background: #afbde4;
 }
 .header .header__cta {
-  background-image: linear-gradient(rgba(97, 123, 201, 0.6), rgba(97, 123, 201, 0.6)), url(../img/tool-spread.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../img/tool-spread.jpg);
   background-position: center;
   background-size: cover;
   height: 560px;
@@ -194,20 +194,24 @@ body {
 }
 .header .header__cta .header__cta__text-content {
   color: white;
-  padding: 0 5rem;
-  font-size: 3.4rem;
-  line-height: 4.2rem;
+  padding: 0 3rem;
+  font-size: 4.4rem;
+  line-height: 5rem;
   letter-spacing: 1px;
   text-align: center;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-  font-weight: 700;
+  font-weight: 600;
+}
+@media (max-width: 800px) {
+  .header .header__cta .header__cta__text-content {
+    font-size: 3.7rem;
+  }
 }
 @media (max-width: 500px) {
   .header .header__cta .header__cta__text-content {
     font-weight: 600;
-    padding: 0 3rem;
-    font-size: 2.5rem;
-    line-height: 3rem;
+    padding: 0 2rem;
+    font-size: 3rem;
+    line-height: 3.6rem;
     letter-spacing: 0.5px;
   }
 }
@@ -215,20 +219,19 @@ body {
   font-size: 2rem;
   text-decoration: none;
   margin-top: 7rem;
-  background: #617bc9;
+  background: #00a0ff;
   padding: 1rem 4rem;
   border-radius: 8px;
   font-weight: bold;
   color: white;
-  border: 2px solid white;
+  border: 2px solid #00a0ff;
   transition: all 0.2s ease;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 .header .header__cta .header__cta__button:hover {
   background: white;
-  border: 2px solid #617bc9;
-  color: black;
-  text-shadow: none;
+  border: 2px solid white;
+  color: #00a0ff;
+  border: 2px solid #00a0ff;
 }
 @media (max-width: 500px) {
   .header .header__cta .header__cta__button {
@@ -239,21 +242,20 @@ body {
   }
 }
 .header .header__cta .header__cta__button.scroll-btn {
-  margin-top: 4rem;
+  margin-top: 3rem;
   cursor: pointer;
-  background: #c4a852;
-  color: white;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  background: white;
+  color: #00a0ff;
+  text-shadow: none;
 }
 .header .header__cta .header__cta__button.scroll-btn:hover {
-  background: white;
-  border: 2px solid #617bc9;
-  color: black;
-  text-shadow: none;
+  background: #00a0ff;
+  color: white;
+  border: 2px solid #00a0ff;
 }
 @media (max-width: 500px) {
   .header .header__cta .header__cta__button.scroll-btn {
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
 }
 .header__top-bar.dark {
