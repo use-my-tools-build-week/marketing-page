@@ -302,6 +302,40 @@ footer p a:visited {
 .utf-heart {
   color: #617bc9;
 }
+.accordion {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  font-weight: 300;
+  border-right: 1px solid gray;
+  border-left: 1px solid gray;
+  border-top: 1px solid gray;
+}
+.accordion .panel {
+  padding: 30px;
+  border-bottom: 1px solid gray;
+}
+.accordion .panel .panel__bar {
+  display: flex;
+  justify-content: space-between;
+}
+.accordion .panel .panel__bar .panel__buttons button {
+  cursor: pointer;
+  background: white;
+  border: none;
+  font-size: 1.5rem;
+}
+.accordion .panel .panel__bar .panel__buttons .hide-btn {
+  display: none;
+}
+.accordion .panel .panel__content {
+  display: none;
+}
+.accordion .panel .toggle-on {
+  display: block;
+}
 .learn-more {
   display: flex;
   justify-content: space-around;
@@ -351,11 +385,11 @@ footer p a:visited {
     margin-top: 4rem;
   }
 }
-.learn-more.bottom-content {
+.learn-more.middle-content {
   padding-top: 2rem;
 }
 @media (max-width: 800px) {
-  .learn-more.bottom-content .learn-more__text-content {
+  .learn-more.middle-content .learn-more__text-content {
     order: -1;
   }
 }
