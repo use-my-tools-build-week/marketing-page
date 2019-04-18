@@ -302,20 +302,62 @@ footer p a:visited {
 .utf-heart {
   color: #617bc9;
 }
-.accordion {
+.faq {
   max-width: 800px;
   margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+@media (max-width: 800px) {
+  .faq {
+    max-width: 600px;
+  }
+}
+.faq .faq__header {
+  font-size: 2.4rem;
+  line-height: 1.3;
   margin-bottom: 3rem;
-  font-size: 1.8rem;
+  color: #7f7f7f;
+  font-weight: 600;
+}
+@media (max-width: 500px) {
+  .faq .faq__header {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+.accordion {
+  font-size: 1.6rem;
   line-height: 1.5;
   font-weight: 300;
-  border-right: 1px solid gray;
-  border-left: 1px solid gray;
-  border-top: 1px solid gray;
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+  border-left: 1px solid rgba(0, 0, 0, 0.3);
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 800px) {
+  .accordion {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 800px) {
+  .accordion {
+    font-size: 1.4rem;
+  }
 }
 .accordion .panel {
-  padding: 30px;
-  border-bottom: 1px solid gray;
+  padding: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  transition: max-height 0.4s cubic-bezier(1, 0, 0, 1);
+  position: relative;
+  height: auto;
+  overflow: hidden;
+}
+.accordion .panel.panel--collapsed {
+  max-height: 50px;
+}
+.accordion .panel.panel--open {
+  max-height: 600px;
+  transition: max-height 0.4s cubic-bezier(1, 0, 0, 1);
 }
 .accordion .panel .panel__bar {
   display: flex;
@@ -325,16 +367,17 @@ footer p a:visited {
   cursor: pointer;
   background: white;
   border: none;
-  font-size: 1.5rem;
 }
 .accordion .panel .panel__bar .panel__buttons .hide-btn {
   display: none;
 }
 .accordion .panel .panel__content {
-  display: none;
-}
-.accordion .panel .toggle-on {
   display: block;
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+.accordion .panel .panel__content--hidden {
+  display: none;
 }
 .learn-more {
   display: flex;
@@ -359,14 +402,14 @@ footer p a:visited {
 .learn-more__text-content h2 {
   font-size: 2.4rem;
   line-height: 1.3;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   color: #7f7f7f;
   font-weight: 600;
 }
 @media (max-width: 500px) {
   .learn-more__text-content h2 {
     font-size: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
   }
 }
 .learn-more__text-content p {
@@ -383,6 +426,7 @@ footer p a:visited {
 @media (max-width: 800px) {
   .learn-more img {
     margin-top: 4rem;
+    margin-bottom: 4rem;
   }
 }
 .learn-more.middle-content {
