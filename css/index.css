@@ -182,7 +182,7 @@ p a:visited {
   background: #afbde4;
 }
 .header .header__cta {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../img/tool-spread-min.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../img/tool-spread.jpg);
   background-position: center;
   background-size: cover;
   height: 560px;
