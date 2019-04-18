@@ -12,7 +12,6 @@ class Panel {
   togglePanel() {
     this.panelBtnOpen.classList.toggle('hide-btn');
     this.panelBtnClose.classList.toggle('hide-btn');
-    // this.panelContent.classList.toggle('toggle-on');
     this.panelContent.classList.toggle('panel__content--hidden');
     this.panel.classList.toggle('panel--collapsed');
     this.panel.classList.toggle('panel--open');
