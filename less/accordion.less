@@ -41,19 +41,18 @@
   }
 
   .panel {
-    transition: max-height 0.4s cubic-bezier(1, 0, 0, 1);
     padding: 1rem;
     border-bottom: @accordion-border;
     height: auto;
     overflow: hidden;
 
     &.panel--collapsed {
-      max-height: 50px;
+      max-height: 75px;
     }
 
     &.panel--open {
       max-height: 300px;
-      transition: max-height 0.4s cubic-bezier(1, 0, 0, 1);
+      transition: max-height 0.6s cubic-bezier(1, 0, 0, 1);
     }
 
     .panel__bar {
